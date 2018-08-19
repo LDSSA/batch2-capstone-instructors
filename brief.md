@@ -19,8 +19,30 @@ This is a very difficult predicition task using only data so don't expect your s
 You are expected to explore and understand the dataset, train a predictive model that outputs predictions of survival.
 Use the following guidelines: TODO - fill in from Hugo
 
-## Deploying the model
+## Deploying and testing
 
 Follow the guidelines for [deploying a model on heroku](https://github.com/LDSSA/heroku-model-deploy) and use the
-following script to test your deployment: TODO - fill in after example deployment is made
+`test-server.py` script to test your deployment. What you'll want to do is start your server and then run 
+`python test-server.py`. There are a few options to use with it. Here are a few examples of how to use the script:
 
+```bash
+# This assumes that you have a file called X_train.csv in the data directory
+# and you have started your server on your localhost because you are developing it
+python test-server.py "data/X_train.csv" "http://127.0.0.1:5000/"
+
+# This is the same scenario but with 100 observations instead of the default 10
+python test-server.py "final_datasets/X_train.csv" "http://127.0.0.1:5000/" -n 100
+
+# This will use a different random state to select the observations. You will use
+# this after you have one set of observations working well and you want to test
+# with a different set.
+python test-server.py "final_datasets/X_train.csv" "http://127.0.0.1:5000/" -r 45
+
+# now you've deployed it to heroku!
+python test-server.py "final_datasets/X_train.csv" "https://deployed-model.herokuapp.com"
+```
+
+### Remember!
+
+You only have 10K rows on the free tier of heroku so after testing, you will want to clear out your database to make
+sure that you aren't taking up any precious space for when we actually start the simulator!
