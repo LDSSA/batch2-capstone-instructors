@@ -9,10 +9,10 @@ This is a very difficult predicition task using only data so don't expect your s
 
 ## The dataset
 
-- Each row in the dataset corresponds to a single person.
-- The data column names and values are supposed to be quite explicit - there is no data dictionary to be supplied
+- Each row in the dataset corresponds to a single person, involved in a car crash.
+- The data column names and values are supposed to be quite explicit - there is no data dictionary to be supplied.
 - The entries in `y_train` are: `1=died`, and `0=survived`
-    - This means that a prediction of `1` is absolute certainty they will die
+    - This means that a prediction of `1` is absolute certainty that a person will die.
 
 ## Exploring the dataset
 
