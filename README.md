@@ -12,6 +12,5 @@ The other notebook is just for processing the original dataset [from here](http:
 
 ## The story and the assignment
 
-I would like to preserve the original intention and meaning of the dataset. I think that it is obfuscated enough that we can do this. Plus, it is so aggressively subsetted and obfuscated that even if they were able to find it online, it would be very difficult to translate into something usable in your model.
-
-**IS THIS OKAY???**
+Check out `brief.md` for the actual assignment. Note that there will be a bit of work involved in taking the relevant
+parts of this repo and moving them to the capstone project repo.
