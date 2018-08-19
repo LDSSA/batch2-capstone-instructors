@@ -4,3 +4,7 @@ sklearn
 scipy
 matplotlib
 category_encoders
+mlxtend
+flask
+peewee
+requests

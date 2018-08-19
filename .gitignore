@@ -1,4 +1,5 @@
 *.ipynb_checkpoints*
 .nbgrader.log
 .idea
-
+fars.csv
+predictions.db
