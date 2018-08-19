@@ -14,10 +14,16 @@ This is a very difficult predicition task using only data so don't expect your s
 - The entries in `y_train` are: `1=died`, and `0=survived`
     - This means that a prediction of `1` is absolute certainty that a person will die.
 
-## Exploring the dataset
+## Exploring the dataset and modeling
 
-You are expected to explore and understand the dataset, train a predictive model that outputs predictions of survival.
-Use the following guidelines: TODO - fill in from Hugo
+You are expected to explore and understand the dataset, and train a predictive model that outputs the *probability of survival* of a person involved in a car crash.
+
+You have already taken a look at many datasets. However, good practices are always good to remember:
+* Take a good overview of the dataset before anything else - numerical variables, categorical variables, anomalies, outliers, missing values, etc. Basically, perform an Exploratory Data Analysis (EDA).  
+* Quickly create a baseline model - this will be your starting point from where you will improve (or not!).  
+* Think beyond what you have in your hands - you cannot fully guarantee that the data your model will see in production has exactly the same characteristics of the training dataset. Plan for failure.  
+* Pipelines are life savers. You probably remember them. You generally have one initial notebook so messy with EDA, that you need to create one with the decisions (steps) you would like to have in your pipeline.  
+* Don't overcomplicate your final solution - the more complicated it is, the more problems it might have in production.  
 
 ## Deploying and testing
 
