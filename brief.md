@@ -16,7 +16,7 @@ This is a very difficult predicition task using only data so don't expect your s
 
 ## Exploring the dataset and modeling
 
-You are expected to explore and understand the dataset, and train a predictive model that outputs the *probability of survival* of a person involved in a car crash.
+You are expected to explore and understand the dataset, and train a predictive model that outputs the *probability of death* of a person involved in a car crash.
 
 You have already taken a look at many datasets. However, good practices are always good to remember:
 * Take a good overview of the dataset before anything else - numerical variables, categorical variables, anomalies, outliers, missing values, etc. Basically, perform an Exploratory Data Analysis (EDA).  
